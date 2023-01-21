@@ -163,10 +163,10 @@ elif Select == "Model Evaluation":
     st.markdown("The model with hyperparameter tuning had higher accuracy, recall, precision, and F1 scores, but a lower AUC score than the model without tuning. It's crucial to balance recall and AUC when identifying students with mental health issues. Overall, the model with tuning performed better, but the trade-off between AUC and other metrics should be considered.")
     
 #///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////    
-with open("Report.pdf", "rb") as pdf_file:
+with open("1191201519_IrfanDaniel_Report.pdf", "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 
 st.download_button(label="Download Report",
                     data=PDFbyte,
-                    file_name="Report.pdf",
+                    file_name="1191201519_IrfanDaniel_Report.pdf",
                     mime='application/octet-stream')
